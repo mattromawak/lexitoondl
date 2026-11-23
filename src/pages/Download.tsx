@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 // APK download path
-const APK_URL = "/downloads/lexitoon.apk";
+const APK_URL = "https://github.com/mattromawak/lexitoondl/releases/download/v1.0.0/lexitoon.apk";
 
 export default function DownloadPage() {
     const handleDownload = (): void => {
