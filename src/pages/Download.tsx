@@ -6,20 +6,13 @@ import {
     Sparkles,
 } from "lucide-react";
 
-// APK download path
 const APK_URL = "https://github.com/mattromawak/lexitoondl/releases/download/v1.0.0/lexitoon.apk";
 
 export default function DownloadPage() {
-    const handleDownload = (): void => {
-        const link = document.createElement("a");
-        link.href = APK_URL;
-        link.download = "LexiToon.apk";
 
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
+    const handleDownload = () => {
+        window.location.href = APK_URL;
     };
-
     return (
         <main className="min-h-screen bg-[#FFF5F7] text-[#30252A] overflow-hidden">
 
